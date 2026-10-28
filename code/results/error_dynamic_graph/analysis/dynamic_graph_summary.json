@@ -1,0 +1,115 @@
+{
+  "config_id": "w12_k2-4_lr0p0010_layers1",
+  "checkpoint": "results/runs/w12_k2-4_lr0p0010_layers1",
+  "test_windows": 662,
+  "nodes": 15,
+  "top_k": 4,
+  "density_offdiag": 0.2857142857142857,
+  "mean_edges_per_row": 4.0,
+  "edge_weight_sum_mean": 14.993724547844279,
+  "adjacency_entropy_mean": 1.3811900286743772,
+  "top_k_edge_turnover": 0.400455708093291,
+  "static_edge_fraction_of_learned_top_all": 0.22857142857142856,
+  "static_adjacency_density_all": 0.22857142857142856,
+  "top_pairs": [
+    {
+      "station_i": "邳州",
+      "station_j": "徐州",
+      "index_i": 0,
+      "index_j": 1,
+      "mean_adjacency": 0.2390740969164854,
+      "edge_frequency": 0.8670694864048338,
+      "static_edge": true
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "睢宁",
+      "index_i": 1,
+      "index_j": 4,
+      "mean_adjacency": 0.23643000608484552,
+      "edge_frequency": 0.8746223564954683,
+      "static_edge": true
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "沭阳",
+      "index_i": 1,
+      "index_j": 2,
+      "mean_adjacency": 0.21583691072788122,
+      "edge_frequency": 0.8089123867069485,
+      "static_edge": true
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "淮安",
+      "index_i": 1,
+      "index_j": 6,
+      "mean_adjacency": 0.1965952580654009,
+      "edge_frequency": 0.729607250755287,
+      "static_edge": false
+    },
+    {
+      "station_i": "邳州",
+      "station_j": "睢宁",
+      "index_i": 0,
+      "index_j": 4,
+      "mean_adjacency": 0.18544230832974357,
+      "edge_frequency": 0.7515105740181269,
+      "static_edge": true
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "灌云",
+      "index_i": 1,
+      "index_j": 3,
+      "mean_adjacency": 0.18375425405372664,
+      "edge_frequency": 0.6790030211480362,
+      "static_edge": false
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "盱眙",
+      "index_i": 1,
+      "index_j": 5,
+      "mean_adjacency": 0.1818180491759518,
+      "edge_frequency": 0.6669184290030211,
+      "static_edge": false
+    },
+    {
+      "station_i": "徐州",
+      "station_j": "南京",
+      "index_i": 1,
+      "index_j": 7,
+      "mean_adjacency": 0.17416305836639015,
+      "edge_frequency": 0.6306646525679758,
+      "static_edge": false
+    },
+    {
+      "station_i": "邳州",
+      "station_j": "沭阳",
+      "index_i": 0,
+      "index_j": 2,
+      "mean_adjacency": 0.1635175131576479,
+      "edge_frequency": 0.6729607250755287,
+      "static_edge": true
+    },
+    {
+      "station_i": "沭阳",
+      "station_j": "睢宁",
+      "index_i": 2,
+      "index_j": 4,
+      "mean_adjacency": 0.1618434673799849,
+      "edge_frequency": 0.6865558912386707,
+      "static_edge": true
+    }
+  ],
+  "model_graph_statistics": {
+    "support_ratio_offdiag": 0.2857142984867096,
+    "adjacency_entropy_mean": 1.3811900615692139,
+    "effective_edges_mean": 3.9797134399414062,
+    "raw_gate_mean": 0.0041138543747365475,
+    "raw_gate_std": 0.005118203815072775,
+    "selected_gate_mean": 0.00508576724678278,
+    "selected_gate_std": 0.006237389985471964
+  }
+}

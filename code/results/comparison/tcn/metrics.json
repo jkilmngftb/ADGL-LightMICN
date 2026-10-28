@@ -1,0 +1,28 @@
+{
+  "model": "tcn",
+  "validation": {
+    "mae": 1.7447380316778451,
+    "rmse": 2.248331920247832,
+    "r2": 0.9559091979121334
+  },
+  "best_epoch": 169,
+  "epochs_trained": 219,
+  "max_epochs": 500,
+  "stopped_early": true,
+  "stop_reason": "patience_exhausted",
+  "early_stopping_reference_rmse": 2.248331920247832,
+  "early_stopping_reference_epoch": 169,
+  "test_evaluated": false,
+  "parameter_count": 51713,
+  "training_seconds": 184.15688850000015,
+  "validation_date_sha256": "a5992d878e80c5357f9a2dbdc77528fc89abf8e303f57cfddc156292ccee9393",
+  "test_date_sha256": "ce2f648a2d3f9166181be77b9e209605270a7dc0bc6998f0250055fa51720a1e",
+  "aligned_counts": {
+    "train": 2437,
+    "val": 307,
+    "test": 662
+  },
+  "tensorflow_gpus": [
+    "/physical_device:GPU:0"
+  ]
+}

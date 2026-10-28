@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "formal_training_performed": false,
+  "variants": [
+    {
+      "variant": "full",
+      "parameters": 183758,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": false,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.5,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 3.105348587036133,
+      "weighted_sparse_loss": 0.24526259303092957
+    },
+    {
+      "variant": "fixed_graph",
+      "parameters": 167374,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": false,
+        "use_embedding": false,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.0,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 4.633135795593262,
+      "weighted_sparse_loss": 0.0
+    },
+    {
+      "variant": "no_top_k",
+      "parameters": 183758,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": false,
+        "top_k": null,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.5,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 3.03483247756958,
+      "weighted_sparse_loss": 0.24526259303092957
+    },
+    {
+      "variant": "no_l1",
+      "parameters": 183758,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": false,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.0,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 3.105348587036133,
+      "weighted_sparse_loss": 0.0
+    },
+    {
+      "variant": "graph_node_embedding",
+      "parameters": 186046,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": true,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.5,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 4.07780122756958,
+      "weighted_sparse_loss": 0.2455672323703766
+    },
+    {
+      "variant": "no_decomposition",
+      "parameters": 183745,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": false,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": false,
+        "sparse_lambda": 0.5,
+        "kernels": [
+          2,
+          4
+        ]
+      },
+      "task_loss": 4.908433437347412,
+      "weighted_sparse_loss": 0.24526259303092957
+    },
+    {
+      "variant": "single_scale",
+      "parameters": 130318,
+      "output_shape": [
+        2,
+        15
+      ],
+      "finite_gradients": true,
+      "compiled_step_passed": true,
+      "effective_spec": {
+        "dynamic": true,
+        "use_embedding": false,
+        "top_k": 4,
+        "temporal_mode": "micn",
+        "residual_output": true,
+        "use_target_calendar": true,
+        "station_conditioned_head": true,
+        "use_graph_propagation": true,
+        "micn_use_decomposition": true,
+        "sparse_lambda": 0.5,
+        "kernels": [
+          2
+        ]
+      },
+      "task_loss": 6.422100067138672,
+      "weighted_sparse_loss": 0.24526259303092957
+    }
+  ],
+  "audit_device": "cpu",
+  "gpu_tested": false,
+  "execution": "tf_function",
+  "smoke_updates_per_variant": 1,
+  "dates_sha256": {
+    "train": "351928709cbd3b2167b91db2225f030105abd2f982d3cb59d4a706be359b9d6b",
+    "val": "8b47f0ebfbbf2489171322e36132b20b639922759e567072198a04ab9d727bec"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "initial_validation": {
+    "mae": 17.287522978786214,
+    "rmse": 21.272649892864838,
+    "r2": -2.9470291317308615
+  },
+  "last_epoch": {
+    "epoch": 325,
+    "mae": 1.3942886899966629,
+    "rmse": 1.8773197376093353,
+    "r2": 0.9692600158489639,
+    "task_loss": 2.576630175113678,
+    "l2_loss": 0.7698742806911468,
+    "sparse_loss": 0.0034374505747109653,
+    "weighted_sparse_loss": 0.0017187252873554827,
+    "total_loss": 3.348223114013672,
+    "trend_rms": 0.1665849472280321,
+    "seasonal_rms": 1.0633631160853332,
+    "elapsed_seconds": 198.55129230000057
+  },
+  "best_validation": {
+    "epoch": 275,
+    "mae": 1.3889081942967172,
+    "rmse": 1.875580837528021,
+    "r2": 0.9693169363656253,
+    "task_loss": 2.5865601778030394,
+    "l2_loss": 0.7708998203277588,
+    "sparse_loss": 0.003458790248259902,
+    "weighted_sparse_loss": 0.001729395124129951,
+    "total_loss": 3.3591894030570986,
+    "trend_rms": 0.16753804311578274,
+    "seasonal_rms": 1.0627770186018204,
+    "elapsed_seconds": 170.02020059999995
+  },
+  "best_epoch": 275,
+  "early_stopping_reference_rmse": 1.875580837528021,
+  "early_stopping_reference_epoch": 275,
+  "epochs_trained": 325,
+  "test_evaluated": false,
+  "max_epochs": 500,
+  "patience": 50,
+  "min_delta": 0.001,
+  "stopped_early": true,
+  "stop_reason": "patience_exhausted",
+  "best_checkpoint_validation": {
+    "mae": 1.3889081942967172,
+    "rmse": 1.875580837528021,
+    "r2": 0.9693169363656253
+  },
+  "best_checkpoint_trend_rms": 0.16753804311578274,
+  "best_checkpoint_seasonal_rms": 1.0627770186018204
+}

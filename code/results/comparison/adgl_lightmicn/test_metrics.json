@@ -1,0 +1,17 @@
+{
+  "model": "adgl_lightmicn",
+  "source": "exact_frozen_source_and_checkpoint",
+  "parameter_count": 183758,
+  "validation": {
+    "mae": 1.3887856853561604,
+    "rmse": 1.8753962255113654,
+    "r2": 0.9693229762902897
+  },
+  "val_date_sha256": "a5992d878e80c5357f9a2dbdc77528fc89abf8e303f57cfddc156292ccee9393",
+  "test": {
+    "mae": 1.2998142448084171,
+    "rmse": 1.7616789545944473,
+    "r2": 0.9676613382419651
+  },
+  "test_date_sha256": "ce2f648a2d3f9166181be77b9e209605270a7dc0bc6998f0250055fa51720a1e"
+}

@@ -1,0 +1,129 @@
+{
+  "protocol": {
+    "window": 12,
+    "kernels": [
+      2,
+      4
+    ],
+    "learning_rate": 0.001,
+    "layers": 1,
+    "seed": 2026,
+    "common_window": 48,
+    "trend_initialization": 0.08333333333333333,
+    "epochs": 500,
+    "patience": 50,
+    "min_delta": 0.001,
+    "config_id": "w12_k2-4_lr0p0010_layers1"
+  },
+  "groups": {
+    "A_tcn_base": {
+      "variant": "tcn_base",
+      "result_dir": "results/architecture_matching/reference/macro_results/tcn_base",
+      "validation": {
+        "mae": 1.427822030763608,
+        "rmse": 1.9319071781939492,
+        "r2": 0.9674463523051579
+      },
+      "test": {
+        "mae": 1.3564814693295404,
+        "rmse": 1.826698075662287,
+        "r2": 0.9652302110889247
+      },
+      "parameters": 89665,
+      "inference_seconds_full_test": 0.08047391000000062,
+      "inference_ms_per_sample": 0.1215617975830825,
+      "test_target_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+      "checkpoint_sha256": "13a7dc384e0589672998633aa0f4c7e4560ba1cdba568d7dfefd69d6e9506d2b"
+    },
+    "B_adgl_tcn": {
+      "variant": "adgl_tcn",
+      "result_dir": "results/architecture_matching/reference/reused_results/adgl_tcn",
+      "validation": {
+        "mae": 1.402587819007204,
+        "rmse": 1.9032483108432032,
+        "r2": 0.9684050223235677
+      },
+      "test": {
+        "mae": 1.332135285969077,
+        "rmse": 1.7919579568212565,
+        "r2": 0.96654013815269
+      },
+      "parameters": 110209,
+      "inference_seconds_full_test": 0.09223294999997052,
+      "inference_ms_per_sample": 0.13932469788515184,
+      "test_target_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+      "checkpoint_sha256": "4ad6ff76082db034a5aed69a9a99bc88f24bd0d8297d47a79d5bc62a62b33acd"
+    },
+    "C_lightmicn_base": {
+      "variant": "lightmicn_base",
+      "result_dir": "results/architecture_matching/reference/macro_results/lightmicn_base",
+      "validation": {
+        "mae": 1.4545305530925916,
+        "rmse": 1.9680257018734604,
+        "r2": 0.9662177416711376
+      },
+      "test": {
+        "mae": 1.3740295011673989,
+        "rmse": 1.8681129565844934,
+        "r2": 0.9636357381230063
+      },
+      "parameters": 163214,
+      "inference_seconds_full_test": 0.10517489499998192,
+      "inference_ms_per_sample": 0.15887446374619624,
+      "test_target_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+      "checkpoint_sha256": "bc583f795faeb8cf9ae50b8efc7950b214694d54e9789080e195346a19a4397b"
+    },
+    "D_adgl_lightmicn": {
+      "variant": "adgl_lightmicn",
+      "result_dir": "results/architecture_matching/reference/reused_results/adgl_lightmicn",
+      "validation": {
+        "mae": 1.3889081942967172,
+        "rmse": 1.875580837528021,
+        "r2": 0.9693169363656253
+      },
+      "test": {
+        "mae": 1.2999543979096209,
+        "rmse": 1.7617325481843271,
+        "r2": 0.9676593706061098
+      },
+      "parameters": 183758,
+      "inference_seconds_full_test": 0.1346914100000049,
+      "inference_ms_per_sample": 0.20346134441088354,
+      "test_target_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+      "checkpoint_sha256": "19397c450a0f4eeae1cf3f65b596401be3e4bee138dec7e43b147770195fec41"
+    }
+  },
+  "comparisons": {
+    "validation": {
+      "B_minus_A_rmse": -0.028658867350745965,
+      "C_minus_A_rmse": 0.03611852367951118,
+      "D_minus_B_rmse": -0.027667473315182267,
+      "D_minus_C_rmse": -0.09244486434543941,
+      "adgl_improvement_with_tcn_A_minus_B": 0.028658867350745965,
+      "lightmicn_improvement_without_graph_A_minus_C": -0.03611852367951118,
+      "lightmicn_improvement_with_adgl_B_minus_D": 0.027667473315182267,
+      "adgl_improvement_with_lightmicn_C_minus_D": 0.09244486434543941,
+      "factorial_interaction_contrast_D_minus_B_minus_C_plus_A": -0.06378599699469345
+    },
+    "test": {
+      "B_minus_A_rmse": -0.034740118841030565,
+      "C_minus_A_rmse": 0.041414880922206354,
+      "D_minus_B_rmse": -0.030225408636929352,
+      "D_minus_C_rmse": -0.10638040840016627,
+      "adgl_improvement_with_tcn_A_minus_B": 0.034740118841030565,
+      "lightmicn_improvement_without_graph_A_minus_C": -0.041414880922206354,
+      "lightmicn_improvement_with_adgl_B_minus_D": 0.030225408636929352,
+      "adgl_improvement_with_lightmicn_C_minus_D": 0.10638040840016627,
+      "factorial_interaction_contrast_D_minus_B_minus_C_plus_A": -0.0716402895591357
+    }
+  },
+  "interpretation_guard": "The interaction contrast is descriptive. Do not claim complementarity or causality unless the observed four-cell pattern supports it.",
+  "test_target_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+  "runtime": {
+    "tensorflow": "2.10.1",
+    "device": "gpu",
+    "gpus": [
+      "/physical_device:GPU:0"
+    ]
+  }
+}

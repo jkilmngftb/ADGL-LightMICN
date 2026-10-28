@@ -1,0 +1,12 @@
+{
+  "data_sha256": "bf6b4eeb3278ba995da7c1929a9653d143999924edcdd67eff2492f19055c6d7",
+  "station_count": 15,
+  "date_start": "2017-01-01",
+  "date_end": "2026-09-20",
+  "n_days": 3550,
+  "split_rule": "chronological 70% train, 10% validation, 20% test",
+  "panel_a_unit": "station-date daily mean temperature observations",
+  "panel_b_unit": "daily mean across 15 stations",
+  "box_whiskers": "5th and 95th percentiles",
+  "unused_period": "none; all raw dates belong to one chronological split"
+}

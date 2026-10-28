@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "lowest",
+    "test_window_index": 419,
+    "target_date": "2026-01-21",
+    "mean_observed_target_temperature_c": -4.299999955296516,
+    "minimum_station_temperature_c": -8.399999618530273,
+    "maximum_station_temperature_c": 0.20000000298023224
+  },
+  {
+    "condition": "median",
+    "test_window_index": 162,
+    "target_date": "2025-05-09",
+    "mean_observed_target_temperature_c": 18.159999974568684,
+    "minimum_station_temperature_c": 14.5,
+    "maximum_station_temperature_c": 21.5
+  },
+  {
+    "condition": "highest",
+    "test_window_index": 220,
+    "target_date": "2025-07-06",
+    "mean_observed_target_temperature_c": 33.28000030517578,
+    "minimum_station_temperature_c": 31.299999237060547,
+    "maximum_station_temperature_c": 34.900001525878906
+  }
+]

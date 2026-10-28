@@ -1,0 +1,146 @@
+{
+  "selection_frozen": true,
+  "config": {
+    "window": 12,
+    "kernels": [
+      2,
+      4
+    ],
+    "learning_rate": 0.001,
+    "layers": 1,
+    "seed": 2026,
+    "common_window": 48,
+    "trend_initialization": 0.08333333333333333,
+    "epochs": 500,
+    "patience": 50,
+    "min_delta": 0.001,
+    "config_id": "w12_k2-4_lr0p0010_layers1"
+  },
+  "full_validation_rmse": 1.875580837528021,
+  "micn_vs_tcn": "MICN 优于 TCN",
+  "micn_vs_tcn_delta_rmse": 0.027667473315182267,
+  "core_ablation_supported": [
+    "fixed_graph",
+    "no_decomposition",
+    "single_scale",
+    "no_top_k"
+  ],
+  "core_ablation_tied": [],
+  "core_ablation_reversed": [],
+  "precheck_rows": [
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "full",
+      "validation_mae": 1.3889081942967172,
+      "validation_rmse": 1.875580837528021,
+      "validation_r2": 0.9693169363656253,
+      "delta_rmse": 0.0,
+      "comparison_type": "reference",
+      "effect_status": "reference",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "parameters": 183758,
+      "result_dir": "results/component_ablation/runs/w12_k2-4_lr0p0010_layers1"
+    },
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "fixed_graph",
+      "validation_mae": 1.3961248838503508,
+      "validation_rmse": 1.9055366653356705,
+      "validation_r2": 0.9683290007412597,
+      "delta_rmse": 0.029955827807649493,
+      "comparison_type": "core_ablation",
+      "effect_status": "支持 Full",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "result_dir": "results/component_ablation/candidate_precheck/w12_k2-4_lr0p0010_layers1/fixed_graph"
+    },
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "no_decomposition",
+      "validation_mae": 1.4521925053964737,
+      "validation_rmse": 1.9619407922300802,
+      "validation_r2": 0.966426320453664,
+      "delta_rmse": 0.08635995470205926,
+      "comparison_type": "core_ablation",
+      "effect_status": "支持 Full",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "result_dir": "results/component_ablation/candidate_precheck/w12_k2-4_lr0p0010_layers1/no_decomposition"
+    },
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "single_scale",
+      "validation_mae": 1.4062167592969572,
+      "validation_rmse": 1.911480513907505,
+      "validation_r2": 0.9681311129514238,
+      "delta_rmse": 0.0358996763794841,
+      "comparison_type": "core_ablation",
+      "effect_status": "支持 Full",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2
+      ],
+      "result_dir": "results/component_ablation/candidate_precheck/w12_k2-4_lr0p0010_layers1/single_scale"
+    },
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "no_top_k",
+      "validation_mae": 1.384045341043014,
+      "validation_rmse": 1.8819763074973275,
+      "validation_r2": 0.9691073296442585,
+      "delta_rmse": 0.006395469969306511,
+      "comparison_type": "core_ablation",
+      "effect_status": "支持 Full",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "result_dir": "results/component_ablation/candidate_precheck/w12_k2-4_lr0p0010_layers1/no_top_k"
+    },
+    {
+      "config_id": "w12_k2-4_lr0p0010_layers1",
+      "variant": "tcn_encoder",
+      "validation_mae": 1.402587819007204,
+      "validation_rmse": 1.9032483108432032,
+      "validation_r2": 0.9684050223235677,
+      "delta_rmse": 0.027667473315182267,
+      "comparison_type": "backbone",
+      "effect_status": "MICN 优于 TCN",
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "result_dir": "results/error_dynamic_graph/candidate_precheck/w12_k2-4_lr0p0010_layers1/tcn_encoder"
+    }
+  ]
+}

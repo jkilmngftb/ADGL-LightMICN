@@ -1,0 +1,47 @@
+{
+  "winter_vs_summer": {
+    "mae_offdiag": 0.035704372078943024,
+    "rmse_offdiag": 0.053069011699742666,
+    "frobenius": 0.7690430420889062,
+    "max_abs": 0.15536097176373004,
+    "pearson_offdiag": 0.817302762062471,
+    "cosine_offdiag": 0.890299489609278,
+    "winter_windows": 180,
+    "summer_windows": 184,
+    "winter_date_start": "2024-12-01",
+    "winter_date_end": "2026-02-28",
+    "summer_date_start": "2025-06-01",
+    "summer_date_end": "2026-08-31",
+    "seasonal_mean_top4_jaccard": 0.5466666666666665,
+    "selection_frequency_mae_offdiag": 0.14540372670807453,
+    "selection_frequency_max_abs_offdiag": 0.5754830917874396,
+    "edges_frequency_change_ge_0p10": 104,
+    "edges_frequency_change_ge_0p20": 62,
+    "mean_daily_frobenius_to_winter_mean": 0.9306539327707738,
+    "mean_daily_frobenius_to_summer_mean": 1.252837262760807,
+    "cross_season_frobenius_to_mean_daily_within_ratio": 0.7044159771861862
+  },
+  "same_season_cross_year": {
+    "winter_2025_vs_2026": {
+      "mae_offdiag": 0.018155315976451945,
+      "rmse_offdiag": 0.03078945925835742,
+      "frobenius": 0.44618165392430786,
+      "max_abs": 0.10542001608345246,
+      "pearson_offdiag": 0.9459639310679686,
+      "cosine_offdiag": 0.9658380206740931
+    },
+    "summer_2025_vs_2026": {
+      "mae_offdiag": 0.012477110447381349,
+      "rmse_offdiag": 0.016391345944849225,
+      "frobenius": 0.2375331694639346,
+      "max_abs": 0.043855121116275375,
+      "pearson_offdiag": 0.9752180572151747,
+      "cosine_offdiag": 0.9872213334776733
+    }
+  },
+  "year_to_year_repeatability": {
+    "pearson_of_summer_minus_winter_edge_differences_2025_vs_2026": 0.8473696114022161,
+    "cosine_of_summer_minus_winter_edge_differences_2025_vs_2026": 0.8473698732920335,
+    "sign_agreement_all_210_edges": 0.8142857142857143
+  }
+}

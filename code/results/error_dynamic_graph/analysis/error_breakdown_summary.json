@@ -1,0 +1,39 @@
+{
+  "config_id": "w12_k2-4_lr0p0010_layers1",
+  "split_info": {
+    "test": {
+      "rows": 9930,
+      "dates": 662,
+      "date_min": "2024-11-28",
+      "date_max": "2026-09-20",
+      "overall_mae": 1.2999543979096209,
+      "overall_rmse": 1.7617325481843271
+    },
+    "val": {
+      "rows": 4605,
+      "dates": 307,
+      "date_min": "2023-12-09",
+      "date_max": "2024-10-10",
+      "overall_mae": 1.3889081942967172,
+      "overall_rmse": 1.875580837528021
+    }
+  },
+  "date_ranges": {
+    "test": {
+      "rows": 9930,
+      "dates": 662,
+      "date_min": "2024-11-28",
+      "date_max": "2026-09-20",
+      "overall_mae": 1.2999543979096209,
+      "overall_rmse": 1.7617325481843271
+    }
+  },
+  "findings": {
+    "best_station": "东山 (RMSE 1.542)",
+    "worst_station": "徐州 (RMSE 1.896)",
+    "best_season": "Summer (RMSE 1.291)",
+    "worst_season": "Spring (RMSE 2.130)",
+    "station_rmse_spread": 0.35424857070192073,
+    "season_rmse_spread": 0.8389596327101378
+  }
+}

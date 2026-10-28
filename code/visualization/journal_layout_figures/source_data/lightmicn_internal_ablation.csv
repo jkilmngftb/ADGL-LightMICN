@@ -1,0 +1,4 @@
+﻿configuration,rmse,description
+ADGL-LightMICN,1.7617325481843271,Complete model
+Single scale (2),1.8108162159370254,Single-scale ablation
+No decomposition,1.8245,No trend-residual decomposition

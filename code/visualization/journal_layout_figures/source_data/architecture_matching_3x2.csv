@@ -1,0 +1,7 @@
+﻿spatial_representation,temporal_encoder,mae,rmse,source_file
+No spatial propagation,TCN,1.3564814693295404,1.826698075662287,architecture_matching/reference_results/MACRO_2X2_RESULTS.csv
+No spatial propagation,LightMICN,1.3740295011673989,1.8681129565844934,architecture_matching/reference_results/MACRO_2X2_RESULTS.csv
+Fixed-graph GCN,TCN,1.3247778676810402,1.7974686046533797,architecture_matching/reference_results/predictions_graph_encoder_fixed_gcn_tcn_test.csv
+Fixed-graph GCN,LightMICN,1.3182417802152497,1.7933812113813776,architecture_matching/reference_results/predictions_graph_encoder_fixed_gcn_lightmicn_test.csv
+ADGL-GCN,TCN,1.332135285969077,1.7919579568212565,architecture_matching/reference_results/predictions_graph_encoder_adgl_tcn_test.csv
+ADGL-GCN,LightMICN,1.2999543979096209,1.7617325481843271,architecture_matching/reference_results/predictions_graph_encoder_adgl_lightmicn_test.csv

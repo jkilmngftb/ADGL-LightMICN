@@ -1,0 +1,28 @@
+{
+  "model": "graph_wavenet",
+  "validation": {
+    "mae": 1.4625747874508592,
+    "rmse": 1.9266370392491332,
+    "r2": 0.9676237192533763
+  },
+  "best_epoch": 299,
+  "epochs_trained": 311,
+  "max_epochs": 500,
+  "stopped_early": true,
+  "stop_reason": "patience_exhausted",
+  "early_stopping_reference_rmse": 1.927542437266727,
+  "early_stopping_reference_epoch": 261,
+  "test_evaluated": false,
+  "parameter_count": 129313,
+  "training_seconds": 429.30502290000004,
+  "validation_date_sha256": "a5992d878e80c5357f9a2dbdc77528fc89abf8e303f57cfddc156292ccee9393",
+  "test_date_sha256": "ce2f648a2d3f9166181be77b9e209605270a7dc0bc6998f0250055fa51720a1e",
+  "aligned_counts": {
+    "train": 2437,
+    "val": 307,
+    "test": 662
+  },
+  "tensorflow_gpus": [
+    "/physical_device:GPU:0"
+  ]
+}

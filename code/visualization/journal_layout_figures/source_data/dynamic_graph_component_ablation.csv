@@ -1,0 +1,6 @@
+﻿configuration,rmse,description
+ADGL-LightMICN,1.7617325481843271,Complete model
+No Top-k,1.7685,Remove Top-k neighbour selection
+No L1,1.7783,Remove candidate-gate L1 regularization
+Fixed graph,1.7934,Replace input-conditioned graph
+Node embedding,1.8078,Add free node embeddings

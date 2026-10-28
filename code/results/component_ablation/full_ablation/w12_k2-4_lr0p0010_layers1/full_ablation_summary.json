@@ -1,0 +1,188 @@
+{
+  "created_at": "2026-10-16T01:08:23.89584",
+  "config": {
+    "window": 12,
+    "kernels": [
+      2,
+      4
+    ],
+    "learning_rate": 0.001,
+    "layers": 1,
+    "seed": 2026,
+    "common_window": 48,
+    "trend_initialization": 0.08333333333333333,
+    "epochs": 500,
+    "patience": 50,
+    "min_delta": 0.001,
+    "config_id": "w12_k2-4_lr0p0010_layers1"
+  },
+  "read_from": "selection/final_selected_config.json",
+  "fixed_graph_interpretation": "固定图替代动态图，并移除仅作用于动态图 gate 的 L1 项",
+  "rows": [
+    {
+      "variant": "full",
+      "validation_mae": 1.3889081942967172,
+      "validation_rmse": 1.875580837528021,
+      "validation_r2": 0.9693169363656253,
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "result_dir": "results/runs/w12_k2-4_lr0p0010_layers1",
+      "delta_validation_rmse": 0.0,
+      "aligned_test_mae": 1.2999543979096209,
+      "aligned_test_rmse": 1.7617325481843271,
+      "aligned_test_r2": 0.9676593706061098,
+      "delta_test_rmse": 0.0
+    },
+    {
+      "variant": "fixed_graph",
+      "validation_mae": 1.3961248838503508,
+      "validation_rmse": 1.9055366653356705,
+      "validation_r2": 0.9683290007412597,
+      "best_epoch": 343,
+      "epochs_trained": 346,
+      "parameters": 167374,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "sparse_lambda": 0.0,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/fixed_graph",
+      "checkpoint_sha256": "72d6c3a0220f959279920007239a2b18235c0c851c71ea38cbe4de943f76e198",
+      "delta_validation_rmse": 0.029955827807649493,
+      "aligned_test_mae": 1.3182417802152497,
+      "aligned_test_rmse": 1.7933812113813776,
+      "aligned_test_r2": 0.9664869663553113,
+      "delta_test_rmse": 0.03164866319705051
+    },
+    {
+      "variant": "no_top_k",
+      "validation_mae": 1.384045341043014,
+      "validation_rmse": 1.8819763074973275,
+      "validation_r2": 0.9691073296442585,
+      "best_epoch": 203,
+      "epochs_trained": 218,
+      "parameters": 183758,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "sparse_lambda": 0.5,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/no_top_k",
+      "checkpoint_sha256": "ff916655f9f7d2581a193524d35ff5d87ad355f0c87d327fa8b8343095c68771",
+      "delta_validation_rmse": 0.006395469969306511,
+      "aligned_test_mae": 1.3046119210095504,
+      "aligned_test_rmse": 1.7684763644778112,
+      "aligned_test_r2": 0.9674113003757819,
+      "delta_test_rmse": 0.006743816293484084
+    },
+    {
+      "variant": "no_l1",
+      "validation_mae": 1.3993457227540844,
+      "validation_rmse": 1.8997814229522787,
+      "validation_r2": 0.9685200220125487,
+      "best_epoch": 292,
+      "epochs_trained": 318,
+      "parameters": 183758,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "sparse_lambda": 0.0,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/no_l1",
+      "checkpoint_sha256": "36c8d07898f9da3cb0510dc2a6db327e45aa9e4d0aa928aa1634d9fdaf8a9b63",
+      "delta_validation_rmse": 0.024200585424257737,
+      "aligned_test_mae": 1.3062825906980493,
+      "aligned_test_rmse": 1.778330978691205,
+      "aligned_test_r2": 0.9670470955149746,
+      "delta_test_rmse": 0.016598430506877815
+    },
+    {
+      "variant": "graph_node_embedding",
+      "validation_mae": 1.4066784296391064,
+      "validation_rmse": 1.9154955436263772,
+      "validation_r2": 0.967997092321086,
+      "best_epoch": 404,
+      "epochs_trained": 408,
+      "parameters": 186046,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "sparse_lambda": 0.5,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/graph_node_embedding",
+      "checkpoint_sha256": "54512365d0a340d3816e6366ea008bf34033f48b40666fcf55de2248e8486331",
+      "delta_validation_rmse": 0.039914706098356234,
+      "aligned_test_mae": 1.332790525996643,
+      "aligned_test_rmse": 1.807752434108382,
+      "aligned_test_r2": 0.9659477023029318,
+      "delta_test_rmse": 0.046019885924054815
+    },
+    {
+      "variant": "no_decomposition",
+      "validation_mae": 1.4521925053964737,
+      "validation_rmse": 1.9619407922300802,
+      "validation_r2": 0.966426320453664,
+      "best_epoch": 471,
+      "epochs_trained": 486,
+      "parameters": 183745,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2,
+        4
+      ],
+      "sparse_lambda": 0.5,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/no_decomposition",
+      "checkpoint_sha256": "3b7d0aeed19dfd4e58129123a07b4c74976848afef20d7e2e1c9c25b3930e678",
+      "delta_validation_rmse": 0.08635995470205926,
+      "aligned_test_mae": 1.3464675967149204,
+      "aligned_test_rmse": 1.8244702230479113,
+      "aligned_test_r2": 0.9653149702832383,
+      "delta_test_rmse": 0.06273767486358417
+    },
+    {
+      "variant": "single_scale",
+      "validation_mae": 1.4062167592969572,
+      "validation_rmse": 1.911480513907505,
+      "validation_r2": 0.9681311129514238,
+      "best_epoch": 489,
+      "epochs_trained": 500,
+      "parameters": 130318,
+      "candidate_kernels": [
+        2,
+        4
+      ],
+      "effective_kernels": [
+        2
+      ],
+      "sparse_lambda": 0.5,
+      "result_dir": "results/candidate_precheck/w12_k2-4_lr0p0010_layers1/single_scale",
+      "checkpoint_sha256": "1a8d793b7d2ec80231d8979bb319e758bc49a54e9b89d37cee1fb70b070426de",
+      "delta_validation_rmse": 0.0358996763794841,
+      "aligned_test_mae": 1.326624388145686,
+      "aligned_test_rmse": 1.8108162159370254,
+      "aligned_test_r2": 0.9658321807113037,
+      "delta_test_rmse": 0.049083667752698235
+    }
+  ]
+}

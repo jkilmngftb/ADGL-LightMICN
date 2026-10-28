@@ -1,0 +1,105 @@
+{
+  "comparison": "graph_type_x_temporal_encoder",
+  "strict_single_variable_dynamicity_comparison": false,
+  "reason_not_strict": "The fixed graph removes the dynamic graph generator and its gate-specific L1 term; the GCN propagation, graph projection, calendar fusion, station-conditioned head, residual prediction, data split, and training protocol are retained.",
+  "validation_dynamic_minus_fixed_rmse": {
+    "tcn": 0.032252803948684905,
+    "lightmicn": -0.029955827807649493
+  },
+  "test_dynamic_minus_fixed_rmse": {
+    "tcn": -0.005510647832122961,
+    "lightmicn": -0.03164866319705051
+  },
+  "groups": {
+    "fixed_gcn_tcn": {
+      "variant": "fixed_tcn",
+      "graph_mode": "fixed",
+      "temporal_mode": "tcn",
+      "validation": {
+        "mae": 1.383363410942135,
+        "rmse": 1.8709955068945183,
+        "r2": 0.9694667779616399
+      },
+      "test": {
+        "mae": 1.3247778676810402,
+        "rmse": 1.7974686046533794,
+        "r2": 0.9663340294919589
+      },
+      "validation_reproduction_abs_rmse_diff": 0.0,
+      "parameters": 93825,
+      "sparse_lambda": 0.0,
+      "inference_seconds_full_test": 0.07923193500000707,
+      "inference_ms_per_sample": 0.11968570241692911,
+      "result_dir": "results/architecture_matching/reference/trained_results/fixed_tcn"
+    },
+    "adgl_tcn": {
+      "variant": "adgl_tcn",
+      "graph_mode": "dynamic",
+      "temporal_mode": "tcn",
+      "validation": {
+        "mae": 1.402587819007204,
+        "rmse": 1.9032483108432032,
+        "r2": 0.9684050223235677
+      },
+      "test": {
+        "mae": 1.332135285969077,
+        "rmse": 1.7919579568212565,
+        "r2": 0.96654013815269
+      },
+      "validation_reproduction_abs_rmse_diff": 0.0,
+      "parameters": 110209,
+      "sparse_lambda": 0.5,
+      "inference_seconds_full_test": 0.09778027500001371,
+      "inference_ms_per_sample": 0.14770434290032283,
+      "result_dir": "results/architecture_matching/reference/reused_results/adgl_tcn"
+    },
+    "fixed_gcn_lightmicn": {
+      "variant": "fixed_lightmicn",
+      "graph_mode": "fixed",
+      "temporal_mode": "micn",
+      "validation": {
+        "mae": 1.3961248838503508,
+        "rmse": 1.9055366653356705,
+        "r2": 0.9683290007412597
+      },
+      "test": {
+        "mae": 1.3182417802152497,
+        "rmse": 1.7933812113813776,
+        "r2": 0.9664869663553113
+      },
+      "validation_reproduction_abs_rmse_diff": 0.0,
+      "parameters": 167374,
+      "sparse_lambda": 0.0,
+      "inference_seconds_full_test": 0.10994332000000213,
+      "inference_ms_per_sample": 0.1660775226586135,
+      "result_dir": "results/architecture_matching/reference/reused_results/fixed_lightmicn"
+    },
+    "adgl_lightmicn": {
+      "variant": "adgl_lightmicn",
+      "graph_mode": "dynamic",
+      "temporal_mode": "micn",
+      "validation": {
+        "mae": 1.3889081942967172,
+        "rmse": 1.875580837528021,
+        "r2": 0.9693169363656253
+      },
+      "test": {
+        "mae": 1.2999543979096209,
+        "rmse": 1.7617325481843271,
+        "r2": 0.9676593706061098
+      },
+      "validation_reproduction_abs_rmse_diff": 0.0,
+      "parameters": 183758,
+      "sparse_lambda": 0.5,
+      "inference_seconds_full_test": 0.15225909499999943,
+      "inference_ms_per_sample": 0.22999863293051273,
+      "result_dir": "results/architecture_matching/reference/reused_results/adgl_lightmicn"
+    }
+  },
+  "target_dates_sha256": {
+    "val": "8b47f0ebfbbf2489171322e36132b20b639922759e567072198a04ab9d727bec",
+    "test": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9"
+  },
+  "fixed_adjacency_sha256": "1586ef40d0e59794cf50574a825398035db638e5ec83469eb1890b8b90311ab2",
+  "fixed_adjacency_provenance": "project-provided prespecified static adjacency; its construction provenance is not documented in the available project artifacts and must be confirmed before claiming that it is geographic or training-only"
+}

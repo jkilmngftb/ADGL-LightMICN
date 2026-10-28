@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "pid": 15304,
+  "epoch": 218,
+  "best_epoch": 203,
+  "best_val_rmse": 1.8819763074973275,
+  "early_stopping_reference_epoch": 168,
+  "early_stopping_reference_rmse": 1.8826150662766208,
+  "early_stopping_wait": 50,
+  "updated_at": "2026-10-15T23:34:19.809195"
+}

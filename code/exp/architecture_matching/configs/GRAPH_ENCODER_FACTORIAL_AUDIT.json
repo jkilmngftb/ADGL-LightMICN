@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "formal_training_performed": false,
+  "test_evaluated": false,
+  "rows": [
+    {
+      "variant": "fixed_tcn",
+      "graph_mode": "fixed",
+      "temporal_mode": "tcn",
+      "parameters": 93825,
+      "sparse_lambda": 0.0,
+      "graph_projection_retained": true,
+      "finite_gradients": true
+    },
+    {
+      "variant": "adgl_tcn",
+      "graph_mode": "dynamic",
+      "temporal_mode": "tcn",
+      "parameters": 110209,
+      "sparse_lambda": 0.5,
+      "graph_projection_retained": true,
+      "finite_gradients": true,
+      "reused_checkpoint_val_rmse": 1.90324854068574,
+      "reproduction_abs_diff": 2.2984253678082212e-07
+    },
+    {
+      "variant": "fixed_lightmicn",
+      "graph_mode": "fixed",
+      "temporal_mode": "micn",
+      "parameters": 167374,
+      "sparse_lambda": 0.0,
+      "graph_projection_retained": true,
+      "finite_gradients": true,
+      "reused_checkpoint_val_rmse": 1.905536678432832,
+      "reproduction_abs_diff": 1.3097161577491079e-08
+    },
+    {
+      "variant": "adgl_lightmicn",
+      "graph_mode": "dynamic",
+      "temporal_mode": "micn",
+      "parameters": 183758,
+      "sparse_lambda": 0.5,
+      "graph_projection_retained": true,
+      "finite_gradients": true,
+      "reused_checkpoint_val_rmse": 1.8755809618090156,
+      "reproduction_abs_diff": 1.2428099460670694e-07
+    }
+  ],
+  "fixed_adjacency": {
+    "shape": [
+      15,
+      15
+    ],
+    "binary": true,
+    "symmetric": true,
+    "zero_diagonal": true,
+    "sha256": "1586ef40d0e59794cf50574a825398035db638e5ec83469eb1890b8b90311ab2",
+    "provenance_status": "construction origin not documented in available artifacts"
+  },
+  "target_date_sha256": {
+    "train": "351928709cbd3b2167b91db2225f030105abd2f982d3cb59d4a706be359b9d6b",
+    "val": "8b47f0ebfbbf2489171322e36132b20b639922759e567072198a04ab9d727bec"
+  },
+  "tensorflow": "2.10.0"
+}

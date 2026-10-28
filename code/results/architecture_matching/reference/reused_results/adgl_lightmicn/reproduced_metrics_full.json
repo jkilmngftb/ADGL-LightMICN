@@ -1,0 +1,44 @@
+{
+  "checkpoint_dir": "results/architecture_matching/reference/reused_results/adgl_lightmicn",
+  "variant": "full",
+  "config": {
+    "data_xlsx": "dataset/CMA_Jiangsu_daily_2017_2026.xlsx",
+    "adj": "dataset/adjacency_matrix.csv",
+    "output": "results/architecture_matching/reference/reused_results/adgl_lightmicn",
+    "variants": "full",
+    "seq_len": 12,
+    "epochs": 500,
+    "batch_size": 256,
+    "hidden_dim": 64,
+    "heads": 4,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "node_embedding_dim": 16,
+    "top_k": 4,
+    "sparse_lambda": 0.5,
+    "light_micn_conv_kernels": [
+      2,
+      4
+    ],
+    "light_micn_layers": 1,
+    "temporal_token_kernel_size": 3,
+    "patience": 50,
+    "min_delta": 0.001,
+    "evaluate_test": false,
+    "seed": 2026,
+    "allow_positional_adj": true
+  },
+  "parameters": 183758,
+  "checkpoint_sha256": "19397c450a0f4eeae1cf3f65b596401be3e4bee138dec7e43b147770195fec41",
+  "test_dates_sha256": "9f54b41f30e9666912e5368580abe3b5bfeb0917c309db5a44c3291c77e694d9",
+  "validation": {
+    "mae": 1.3889081942967172,
+    "rmse": 1.875580837528021,
+    "r2": 0.9693169363656253
+  },
+  "test": {
+    "mae": 1.2999543979096209,
+    "rmse": 1.7617325481843271,
+    "r2": 0.9676593706061098
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model": "gcn_mlp",
+  "validation": {
+    "mae": 1.9735556855862484,
+    "rmse": 2.473273437120442,
+    "r2": 0.9466454559133594
+  },
+  "best_epoch": 36,
+  "epochs_trained": 86,
+  "max_epochs": 500,
+  "stopped_early": true,
+  "stop_reason": "patience_exhausted",
+  "early_stopping_reference_rmse": 2.473273437120442,
+  "early_stopping_reference_epoch": 36,
+  "test_evaluated": false,
+  "parameter_count": 58177,
+  "training_seconds": 16.18798659999993,
+  "validation_date_sha256": "a5992d878e80c5357f9a2dbdc77528fc89abf8e303f57cfddc156292ccee9393",
+  "test_date_sha256": "ce2f648a2d3f9166181be77b9e209605270a7dc0bc6998f0250055fa51720a1e",
+  "aligned_counts": {
+    "train": 2437,
+    "val": 307,
+    "test": 662
+  },
+  "tensorflow_gpus": [
+    "/physical_device:GPU:0"
+  ]
+}

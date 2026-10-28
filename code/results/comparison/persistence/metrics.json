@@ -1,0 +1,49 @@
+{
+  "model": "persistence",
+  "validation": {
+    "mae": 1.6134853374281743,
+    "rmse": 2.1864984030691286,
+    "r2": 0.9583010157785745
+  },
+  "trained": false,
+  "test_evaluated": false,
+  "protocol": {
+    "seed": 2026,
+    "seq_len": 12,
+    "common_window": 48,
+    "learning_rate": 0.001,
+    "hidden_dim": 64,
+    "heads": 4,
+    "dropout": 0.1,
+    "batch_size": 256,
+    "max_epochs": 500,
+    "patience": 50,
+    "min_delta": 0.001,
+    "min_delta_role": "early_stopping_only",
+    "checkpoint_rule": "save_every_strict_validation_rmse_improvement",
+    "optimizer": "Adam",
+    "lr_schedule": "halve_every_50_epochs_floor_1e-5",
+    "l2_lambda": 0.0015,
+    "split": "chronological_70_10_20",
+    "selection": "validation_only",
+    "test_dates": "aligned_to_common_window_48",
+    "proposed_model": {
+      "temporal_mode": "micn",
+      "micn_kernels": [
+        2,
+        4
+      ],
+      "micn_layers": 1,
+      "trend_initialization": 0.08333333333333333,
+      "dynamic_graph": true,
+      "graph_node_embedding": false,
+      "top_k": 4,
+      "sparse_lambda": 0.5,
+      "graph_propagation": true,
+      "target_calendar": true,
+      "residual_prediction": true,
+      "station_conditioned_head": true,
+      "parameter_count_reference": 183758
+    }
+  }
+}
